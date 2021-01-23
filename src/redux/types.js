@@ -1,0 +1,8 @@
+export const CREATE_OBJECT = 'CREATE_OBJECT'
+export const DELETE_OBJECT = 'DELETE_OBJECT'
+export const EDIT_OBJECT = 'EDIT_OBJECT'
+export const NEW_FORM = 'NEW_FORM'
+export const EDIT_FORM = 'EDIT_FORM'
+export const EMPTY_FORM = 'EMPTY_FORM'
+export const SELECT_OBJECT = 'SELECT_OBJECT'
+export const DESELECT_OBJECT = 'DESELECT_OBJECT'

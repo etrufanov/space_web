@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import ObjectsList from './components/ObjectsList'
+import Form from './components/Form'
+import './style.css'
+import AddObject from './components/AddObject';
+import { connect } from 'react-redux';
 
-function App() {
+
+function App({form}) {
+  const hideMain = (form === "empty") ? ' hideMain' : ''
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="List">
+        <ObjectsList />
+        <AddObject />
+      </div>
+      <div className={"Main" + hideMain}>
+        <Form />
+      </div>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+      form: state.form.form
+  }
+}
+
+export default connect(mapStateToProps,null)(App)
