@@ -73,7 +73,7 @@ body {
     padding: 20px 15px;
     border-top: 1px solid rgb(216,216,216);
     border-radius: 5px;
-    height: 834px;
+    /* max-height: 900px; */
 }
 
 .hideMain {
@@ -112,8 +112,8 @@ h3 {
 
 .restrict {
     color: red;
-    font-size: 70%;
-    margin-top: 3px;
+    font-size: 75%;
+    margin: 5px 10px 0 10px;
 }
 
 label {
