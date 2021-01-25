@@ -4,7 +4,6 @@ import './style.css'
 import AddObject from './components/AddObject';
 import { connect } from 'react-redux';
 
-
 function App({form}) {
   const hideMain = (form === "empty") ? ' hideMain' : ''
   return (
